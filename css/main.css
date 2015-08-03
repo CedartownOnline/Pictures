@@ -1,0 +1,133 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+}
+
+p {
+    text-indent: 50px;
+}
+
+.titleSection
+{    background-image: url("/img/polkHist_256.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-right: 200px;
+}
+
+.inlineImage {
+	float: left;
+	margin-right: 10px;
+	max-height: 200px;
+	max-width: 150px;
+}
+
+.additionalInfo {
+font-size: 95%;
+text-indent: 35px;
+}
+
+.caldate{
+  min-width: 80px;
+  float:left;
+}
+.caltime{
+min-width: 80px;
+float:left;
+}
+.caltitle{
+float:left;
+}
+
+
+
+.close{
+    position: relative;
+    top: 5px;
+	right: -1
+	}
+	
+.tinyTable
+{
+	width: 25%;
+	margin: 0 auto;
+}
+
+.littleTable{
+width: 35%;
+margin: 0 auto;
+}
+
+.mediumTable{
+width: 50%;
+margin: 0 auto;
+}
+
+.datatable
+{
+
+}
+
+.datatable > tbody > tr:nth-child(odd) > td {
+  font-weight: normal;  
+}
+
+.datatable> tbody > tr:nth-child(even) > td {
+    font-weight: bold;
+}
+
+
+address { 
+    display: block;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+ 
+}

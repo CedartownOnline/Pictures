@@ -1,0 +1,31 @@
+
+
+<div class="container-fluid">
+&nbsp;
+	<div class="row">
+		<div class="col-md-12">
+{{pathString}}
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+		<div class="list-group">
+			<a ng-repeat="dir in directories" 
+			ng-href="#{{dir.path}}"
+			class="list-group-item">
+			<span class="glyphicon glyphicon-folder-close pull-left"></span>&nbsp;
+			{{dir.name}}
+			<span ng-show="dir.fileCount" class="badge">{{dir.fileCount}}</span>
+			</a>
+		</div>
+		</div>
+		<div class="col-md-8">
+		    <carousel interval="myInterval" no-wrap="noWrapSlides">
+			<slide ng-repeat="slide in slides" active="slide.active">
+				<img ng-src="/{{slide.image}}" style="margin:auto;">
+		  </slide>
+		</carousel>
+		</div>
+	</div>
+</div>

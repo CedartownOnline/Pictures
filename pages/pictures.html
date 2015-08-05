@@ -1,40 +1,44 @@
 <div class="container-fluid">
-	&nbsp;
-	<div class="row">
-		<div class="col-md-12">
-			{{pathString}}
-		</div>
-	</div>
+    &nbsp;
+    <div class="row">
+        <div class="col-md-12">
+            {{pathString}}
+        </div>
+    </div>
 
-	<div class="row">
-		<div class="col-md-4">
-			<div class="list-group">
-				<a ng-repeat="dir in directories" ng-href="#{{dir.path}}" class="list-group-item">
-					<span class="glyphicon glyphicon-folder-close pull-left"></span>&nbsp; {{dir.name}}
-					<span ng-show="dir.fileCount" class="badge">{{dir.fileCount}}</span>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-8">
-			<div class="row">
-				<div ng-repeat="slide in slides" class="col-md-3 col-sm-4 col-xs-6" >
-				<img
-				class="img-responsive grid "
-				data-toggle="modal" data-target="#imageZoom"
-				ng-click="showImage(slide)"
-				ng-src="{{slide.image}}" /></div>
-			</div>
-		</div>
-		<div id="imageZoom" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="imageZoomLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-				 
-					<div class="modal-body">
-					     Filed Name :  {{currentSlide.name}}
-						<img width="100%" class="img-responsive" ng-src="{{currentSlide.image}}" >
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="list-group">
+                <a ng-repeat="dir in directories" ng-href="#{{dir.path}}" class="list-group-item">
+                    <span class="glyphicon glyphicon-folder-close pull-left"></span>&nbsp; {{dir.name}}
+                    <span ng-show="dir.fileCount" class="badge">{{dir.fileCount}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div ng-repeat="slide in slides" class="col-md-3 col-sm-4 col-xs-6" >
+                    <img
+                        class="img-responsive grid "
+                        data-toggle="modal" data-target="#imageZoom"
+                        ng-click="showImage(slide)"
+                        ng-src="{{slide.image}}" /></div>
+            </div>
+        </div>
+        <div id="imageZoom" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        Filed Name :  {{currentSlide.name}}
+                        <img width="100%" class="img-responsive" ng-src="{{currentSlide.image}}" >
+                    </div>
+                    <div class="modal-footer">
+                        <a ng-href="{{currentSlide.image}}" target="fullImage" class="btn btn-default">Open Full Screen</a>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

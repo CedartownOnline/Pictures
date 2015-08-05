@@ -63,7 +63,7 @@ float:left;
     position: relative;
     top: 5px;
 	right: -1
-	}
+}
 	
 .tinyTable
 {
@@ -113,35 +113,5 @@ img[class~="grid"] {
 img[class~="grid"]:hover {
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
- 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
  
 }
